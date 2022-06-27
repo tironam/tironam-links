@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Footer = styled.div`
 	color: #fff;
-	position: bottom;
+	position: absolute center;
 	margin-top: 60px;
 	text-align: center;
 	font-size: 12px;
