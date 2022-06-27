@@ -1,26 +1,57 @@
 import React from 'react';
-import logo from './logo.svg';
+import Header from './components/Header';
+import ProfilePic from './components/ProfilePic';
+import Title from './components/Title';
+import Text from './components/Text';
+import picture from './profile.jpg';
+import Button from './components/Button';
+import IconSection from './components/IconSection';
+import IconBtn from './components/IconBtn';
+import Footer from './components/Footer';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { FaTiktok, FaInstagram } from 'react-icons/fa';
+import { AiOutlineMail } from 'react-icons/ai';
+
+const App = () => {
+	let year = new Date().getFullYear();
+
+	return (
+		<>
+			<Header>@tironam</Header>
+			<ProfilePic src={picture} alt='Michael Tirona picture' />
+			<Title>Michael Tirona</Title>
+			<IconSection>
+				<IconBtn href='https://www.tiktok.com/@tironam' target='_blank'>
+					<FaTiktok />
+				</IconBtn>
+				<IconBtn
+					href='https://www.instagram.com/tironam'
+					target='_blank'
+				>
+					<FaInstagram />
+				</IconBtn>
+			</IconSection>
+			<Text>Content creator, web developer, and artist</Text>
+			<Text>For Business Inquiries:</Text>
+			<IconSection>
+				<IconBtn href='mailto:tironamichael@gmail.com'>
+					<AiOutlineMail />
+				</IconBtn>
+			</IconSection>
+			<Button href='tironam.com' target='_blank'>
+				Web Development Portfolio
+			</Button>
+			{/* <Text>My Marvel Resource site:</Text> */}
+			<Button href='https://mcuandyou.com' target='_blank'>
+				My Marvel Resource site
+			</Button>
+			<Footer>
+				Michael Tirona {year} | Built with TypeScript, React,
+				Styled-Components, and React-Icons
+			</Footer>
+		</>
+	);
+};
 
 export default App;
