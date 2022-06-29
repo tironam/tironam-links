@@ -4,7 +4,7 @@ import ProfilePic from './components/ProfilePic';
 import Title from './components/Title';
 import Text from './components/Text';
 import picture from './profile.jpg';
-import Button from './components/Button';
+import Button from './components/Button/Button';
 import IconSection from './components/IconSection';
 import IconBtn from './components/IconBtn';
 import Footer from './components/Footer';
@@ -39,11 +39,11 @@ const App = () => {
 					<AiOutlineMail />
 				</IconBtn>
 			</IconSection>
-			<Button href='tironam.com' target='_blank'>
+			<Button link='https://tironam.com'>
 				Web Development Portfolio
 			</Button>
 			{/* <Text>My Marvel Resource site:</Text> */}
-			<Button href='https://mcuandyou.com' target='_blank'>
+			<Button link='https://mcuandyou.com'>
 				My Marvel Resource site
 			</Button>
 			<Footer>

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Button = styled.a`
+const ButtonStyles = styled.a`
 	cursor: pointer;
 	border-radius: 8px;
 	text-align: center;
@@ -23,4 +23,4 @@ const Button = styled.a`
 	}
 `;
 
-export default Button;
+export default ButtonStyles;
