@@ -1,4 +1,4 @@
-import Wrapper from './Button.styles';
+import { ButtonWrap } from './Button.styles';
 
 type Props = {
 	children: string;
@@ -7,9 +7,9 @@ type Props = {
 };
 
 const Button: React.FC<Props> = ({ link, children, newTab }) => (
-	<Wrapper href={link} target={newTab}>
+	<ButtonWrap href={link} target={newTab}>
 		{children}
-	</Wrapper>
+	</ButtonWrap>
 );
 
 export default Button;

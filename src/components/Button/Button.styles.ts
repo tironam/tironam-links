@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const ButtonStyles = styled.a`
+export const ButtonWrap = styled.a`
 	cursor: pointer;
 	border-radius: 8px;
 	text-align: center;
@@ -23,4 +23,6 @@ const ButtonStyles = styled.a`
 	}
 `;
 
-export default ButtonStyles;
+export const BtnWrapper = styled.div`
+	margin-top: 32px;
+`
