@@ -8,6 +8,7 @@ import IconBtn from './components/IconBtn/IconBtn';
 import Footer from './components/Footer';
 
 import { BtnWrapper } from './components/Button/Button.styles';
+import { Fwrapper } from './components/Footer';
 import { IconSectionWrap } from './components/IconBtn/IconBtn.styles';
 
 import './App.css';
@@ -20,36 +21,41 @@ const App = () => {
 
 	return (
 		<>
-			<Header>@tironam</Header>
-			<ProfilePic img={picture} alt='Michael Tirona picture' />
-			<Title>Michael Tirona</Title>
-			<IconSectionWrap>
-				<IconBtn
-					link='https://www.tiktok.com/@tironam'
-					icon={<FaTiktok />}
-				/>
-				<IconBtn
-					link='https://www.instagram.com/tironam'
-					icon={<FaInstagram />}
-				/>
-				<IconBtn
-					link='mailto:tironamichael@gmail.com'
-					icon={<AiOutlineMail />}
-				/>
-			</IconSectionWrap>
-			<Text>Content creator, web developer, and artist</Text>
-			<BtnWrapper>
-				<Button link='https://tironam.com'>
-					Web Development Portfolio
-				</Button>
-				<Button link='https://mcuandyou.com'>
-					My Marvel Resource site
-				</Button>
-			</BtnWrapper>
-			<Footer>
-				Michael Tirona {year} | Built with TypeScript, React,
-				Styled-Components, and React-Icons
-			</Footer>
+			<div className='wrapper'>
+				<Header>@tironam</Header>
+				<ProfilePic img={picture} alt='Michael Tirona picture' />
+				<Title>Michael Tirona</Title>
+				<IconSectionWrap>
+					<IconBtn
+						link='https://www.tiktok.com/@tironam'
+						icon={<FaTiktok />}
+					/>
+					<IconBtn
+						link='https://www.instagram.com/tironam'
+						icon={<FaInstagram />}
+					/>
+					<IconBtn
+						link='mailto:tironamichael@gmail.com'
+						icon={<AiOutlineMail />}
+					/>
+				</IconSectionWrap>
+				<Text>Content creator, web developer, and artist</Text>
+				<BtnWrapper>
+					<Button link='https://tironam.com'>
+						Web Development Portfolio
+					</Button>
+					<Button link='https://mcuandyou.com'>
+						My Marvel Resource site
+					</Button>
+				</BtnWrapper>
+			</div>
+
+			<Fwrapper>
+				<Footer>
+					Michael Tirona {year} | Built with TypeScript, React,
+					Styled-Components, and React-Icons
+				</Footer>
+			</Fwrapper>
 		</>
 	);
 };
