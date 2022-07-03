@@ -1,4 +1,3 @@
-import { ReactNode } from 'react';
 import PicWrap from './ProfilePic.styles';
 
 type Props = {
