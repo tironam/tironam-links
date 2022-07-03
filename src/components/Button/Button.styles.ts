@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Button = styled.a`
+export const ButtonWrap = styled.a`
 	cursor: pointer;
 	border-radius: 8px;
 	text-align: center;
@@ -14,13 +14,13 @@ const Button = styled.a`
 	border: #fff 4px solid;
 	text-decoration: none;
 	&:hover {
-		height: 40px;
-		width: 52%;
-		line-height: 36px;
+		transform: scale(1.1, 1.1);
 	}
 	@media (max-width: 480px) {
 		width: 90%;
 	}
 `;
 
-export default Button;
+export const BtnWrapper = styled.div`
+	margin: 32px 0 100px 0;
+`
