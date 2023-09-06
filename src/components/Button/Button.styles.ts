@@ -8,7 +8,7 @@ export const ButtonWrap = styled.a`
 	color: #fff;
 	margin: 16px auto;
 	width: 50%;
-	height: 36px;
+	height: auto;
 	display: block;
 	line-height: 34px;
 	border: #fff 4px solid;
