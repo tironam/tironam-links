@@ -18,6 +18,7 @@ export const ButtonWrap = styled.a`
 	}
 	@media (max-width: 480px) {
 		width: 90%;
+		height: auto;
 	}
 `;
 
